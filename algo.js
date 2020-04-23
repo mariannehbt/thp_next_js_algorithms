@@ -11,6 +11,7 @@ fs.readFile(process.argv[2], 'utf8', (error, data) => {
 	console.log(selectionSort(IntArray(data)));
 	console.log(quickSort(IntArray(data)));
 	console.log(mergeSort(IntArray(data)));
+	console.log(cocktailSort(IntArray(data)));
 });
 
 const IntArray = (n) => {
@@ -133,3 +134,37 @@ const mergeSort = (n) => {
 	console.log(`=> Tri par fusion: ${counter} comparaisons`);
 	return mergeSortArray(n);
 }
+
+// Tri cocktail
+const cocktailSort = (n) => {
+	let counter = 0;
+	let is_Sorted = true;
+
+	while (is_Sorted) {
+		for (let i = 0; i < n.length; i++) {
+			if (n[i] > n[i + 1]) {
+				counter++;
+				let tmp = n[i];
+				n[i] = n[i + 1];
+				n[i+1] = tmp;
+				is_Sorted = true;
+			}
+		}
+
+		if (!is_Sorted) break;
+		
+		is_Sorted = false;
+		for (let j = n.length - 1; j >= 0; j--) {
+			if (n[j-1] > n[j]) {
+				counter++;
+				let tmp = n[j];
+				n[j] = n[j - 1];
+				n[j - 1] = tmp;
+				is_Sorted = true;
+			}
+		}
+	}
+
+	console.log(`=> Tri cocktail: ${counter} comparaisons`);
+	return n;
+};
