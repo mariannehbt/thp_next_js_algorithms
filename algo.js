@@ -1,3 +1,10 @@
+// Cadeau pour mon correcteur :
+// node algo.js list_1.txt
+// node algo.js list_2.txt
+// node algo.js list_sorted.txt
+// node algo.js list_long.txt
+// node algo.js list.txt (tu dois utiliser des valeurs au choix au format suivant '48 -2 6 12 0 -4')
+
 let fs = require('fs');
 
 fs.readFile(process.argv[2], 'utf8', (error, data) => {

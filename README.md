@@ -42,7 +42,7 @@ Ex : avec la liste n°4 `[1, 8, 10, 21]` et `k` = `19`, la fonction devra sortir
 
 * Exercice n°1 : Résolution du sujet avec une complexité algorithmique de O(n²)
 * Exercice n°3 : Résolution du sujet avec une complexité algorithmique de O(n)
-<!-- * Exercice 5 : Résolution du sujet en ne faisant qu'un seul passage sur la liste -->
+* Exercice n°5 : Résolution du sujet en ne faisant qu'un seul passage sur la liste
 
 ### Sujet 2
 
@@ -55,9 +55,9 @@ Avec une liste contenant la hauteur (en étages) d'immeubles appartenant à une 
 Ex : avec la liste n°5 `[3, 7, 8, 3, 6, 1]`, la fonction retourner `3` puisque l'étage le plus haut des immeubles ayant comme taille `8`, `6`, et `1` ont tous une vue à l'ouest.<br>
 Ex : avec la liste n°6 `[1, 4, 5, 8]`, la fonction retourner `1` puisque seul le dernier bâtiment a au moins un appartement avec une vue à l'ouest.
 
-<!-- * Exercice n°2 : Résolution du sujet avec une complexité algorithmique de O(n²) -->
-<!-- * Exercice n°4 : Résolution du sujet avec une complexité algorithmique de O(n) -->
-<!-- * Exercice 6 : Résolution du sujet en ne faisant qu'un seul passage sur la liste -->
+* Exercice n°2 : Résolution du sujet avec une complexité algorithmique de O(n²)
+* Exercice n°4 : Résolution du sujet avec une complexité algorithmique de O(n)
+* Exercice n°6 : Résolution du sujet en ne faisant qu'un seul passage sur la liste
 
 Commande :
 ```
